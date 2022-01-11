@@ -14,6 +14,8 @@ html *,
 body *{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.3;
 }
 
 .wrap{
@@ -22,9 +24,56 @@ body *{
     width: 90%;
     margin: 0 auto;}
 
+.buttons{
+    display: flex;}
+    .buttons.flex-end{
+        justify-content: flex-end;
+    }
+    .button{
+        display: block;}
+        .button a{
+            padding: 10px 32px;
+            display: block;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            background-color: #3882F6;
+            color: #fff;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;}
+            .button a:hover,
+            .button a:focus{
+                background-color: #fff;
+                color: #3882F6;}
+
 /*
 SITE CONTENT
 */
+
+.cta-section{
+    padding: 72px 0px;}
+
+.wide-cta{
+    padding: 40px 32px;
+    border-radius: 10px;
+    background-color: #3882F6;}
+    .wide-cta .wide-cta--inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 940px;
+        width: 100%;}
+    .wide-cta .content{
+        width: 100%;}
+        .wide-cta .content p{
+            margin: 0px;
+            color: #fff;}
+            .wide-cta .content p.title{
+                font-size: 24px;
+                font-weight: 700;}
+    .wide-cta .link{
+        flex: 1 0 200px;}
 
 
 /*
@@ -34,9 +83,7 @@ FOOTER
 footer{
     padding: 24px 0px;
     background-color: #1F2937;}
-
-footer p{
-    margin: 0px;
-    color: #F9FAF8;
-    font-size: 18px;
-    text-align: center;}
+    footer p{
+        margin: 0px;
+        color: #F9FAF8;
+        text-align: center;}
