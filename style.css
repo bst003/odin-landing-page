@@ -142,19 +142,19 @@ SITE CONTENT
 .gallery-contain{
     margin-top: 48px;
     display: flex;
-    column-gap: 2%;
+    column-gap: 4%;
     row-gap: 32px;
     flex-wrap: wrap;}
     @media all and (max-width: 768px) {
         .gallery-contain{
-            column-gap: 3%}
+            column-gap: 4%}
     }
     .gallery-contain .gallery-item{
-        flex: 1 23%;
+        flex: 1 21%;
         text-align: center;}
         @media all and (max-width: 768px) {
             .gallery-contain .gallery-item{
-                flex: 1 46%;}
+                flex: 1 42%;}
         }
         .gallery-contain .gallery-item img{
             display: block;
