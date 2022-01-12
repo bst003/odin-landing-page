@@ -13,6 +13,7 @@ body,
 html *,
 body *{
     box-sizing: border-box;
+    color: #1F2937;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 1.3;
@@ -27,14 +28,27 @@ body *{
         max-width: 1024px;
     }
 
+.direct-wrap > *:first-child{
+    margin-top: 0px;}
+.direct-wrap > *:last-child{
+    margin-bottom: 0px;}
+
+h1{
+    margin: 0px 0px 4px;
+    font-size: 48px;
+    font-weight: 700;}
+
+p{
+    margin: 8px 0px 12px;}
+
 .buttons{
     display: flex;}
     .buttons.flex-end{
         justify-content: flex-end;
     }
-    .button{
+    .buttons .button{
         display: block;}
-        .button a{
+        .buttons .button a{
             padding: 10px 32px;
             display: block;
             border: 2px solid #fff;
@@ -44,10 +58,15 @@ body *{
             font-weight: 700;
             text-align: center;
             text-decoration: none;}
-            .button a:hover,
-            .button a:focus{
+            .buttons .button a:hover,
+            .buttons .button a:focus{
                 background-color: #fff;
-                color: #3882F6;}
+                color: #3882F6!important;}
+        .buttons .button.alt a{
+            border-color: #3882F6;}
+            .buttons .button.alt a:hover,
+            .buttons .button.alt a:focus {
+                border-color: #fff;}
 
 /*
 HEADER
@@ -83,6 +102,43 @@ header{
 /*
 SITE CONTENT
 */
+
+.text-image{
+    padding: 96px 0px;
+    background-color: #1F2937;}
+    .text-image .content-contain{
+        display: flex;
+        column-gap: 3.5%;
+        align-items: center;
+        justify-content: space-between;}
+        .text-image .content-contain > div{
+            color: #E5E7EB;
+            flex: 1 1 50%;}
+
+        .text-image .content-contain .text-content {
+            position: relative;}
+            .text-image .content-contain .text-content h1{
+                color: #F9FAF8;}
+            .text-image .content-contain .text-content *{
+                color: #E5E7EB;}
+
+        .text-image .content-contain .image-content{
+            position: relative;}
+            .text-image .content-contain .image-content img{
+                width: 100%;}
+
+.quote-section{
+    padding: 96px 0px;
+    background-color: #E5E7EB;}
+    .quote-section p{
+        font-weight: 700;
+        text-align: right;}
+        .quote-section p.quote-contents{
+            font-size: 32px;
+            font-style: italic;
+            font-weight: 300;
+            text-align: left;}
+    
 
 .cta-section{
     padding: 72px 0px;}
